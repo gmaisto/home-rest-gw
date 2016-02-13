@@ -94,6 +94,9 @@ func main() {
 		if light1 != "" {
 			curdata.Light1 = light1
 			curdata.Light1ls = light1ls
+		} else {
+			curdata.Light1 = "N/A"
+			curdata.Light1ls = light1ls
 		}
 		datamux.Unlock()
 
